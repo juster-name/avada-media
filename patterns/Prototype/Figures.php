@@ -19,9 +19,11 @@ class Rectangle extends Shape
 {
     public float $height, $width;
 
-    public function Circle(int $height, int $width)
+    public function Rectangle(int $height, int $width)
     {
-        $this->radius = $radius;
+        $this->height = $height; 
+        $this->width = $width;
+        // comment
     }
     public function clone() : Shape
     {
