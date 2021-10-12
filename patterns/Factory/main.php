@@ -8,6 +8,8 @@ $productA = $productFactory->createProduct("A");
 $productB = $productFactory->createProduct("B");
 $productA2 = $productFactory->createProduct("A");
 
-echo $productA->getName()."\n".$productB->getName()."\n".$productA2->getName();
+echo $productA->getName();
+echo $productB->getName();
+echo $productA2->getName();
 
 ?>
