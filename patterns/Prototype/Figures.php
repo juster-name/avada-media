@@ -23,11 +23,10 @@ class Rectangle extends Shape
     {
         $this->height = $height; 
         $this->width = $width;
-        // comment
     }
     public function clone() : Shape
     {
-        return new Circle($this->radius);
+        return new Rectangle($this->height, $this->width);
     }
 }
 
