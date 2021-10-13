@@ -5,12 +5,12 @@ class WinButton implements IButton
 {
     public function draw()
     {
-        echo "WinButton was drawn";
+        echo "WinButton was drawn\n";
     }
 
     public function click()
     {
-        echo "WinButton was clicked";
+        echo "WinButton was clicked\n";
     }
 }
 
@@ -18,12 +18,12 @@ class LinuxButton implements IButton
 {
     public function draw()
     {
-        echo "LinuxButton was drawn";
+        echo "LinuxButton was drawn\n";
     }
 
     public function click()
     {
-        echo "LinuxButton was clicked";
+        echo "LinuxButton was clicked\n";
     }
 }
 
