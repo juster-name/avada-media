@@ -12,7 +12,7 @@ class Bread implements IVisitable
 
     public function accept(IVisitor $visitor)
     {
-        return $visitor->visit($this);
+        return $visitor->visitBread($this);
     }
 }
 
@@ -27,7 +27,7 @@ class Milk implements IVisitable
 
     public function accept(IVisitor $visitor)
     {
-        return $visitor->visit($this);
+        return $visitor->visitMilk($this);
     }
 }
 
@@ -42,7 +42,7 @@ class Eggs implements IVisitable
 
     public function accept(IVisitor $visitor)
     {
-        return $visitor->visit($this);
+        return $visitor->visitEggs($this);
     }
 }
 
