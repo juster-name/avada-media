@@ -3,7 +3,7 @@ require_once "IVisitor.php";
 
 interface IVisitable
 {
-    public function accept(IVisitor $visitor);
+    public function accept(IVisitor $visitor) : float;
 }
 
 

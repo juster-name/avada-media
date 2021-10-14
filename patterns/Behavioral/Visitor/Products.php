@@ -10,7 +10,7 @@ class Bread implements IVisitable
         $this->price = $price;
     }
 
-    public function accept(IVisitor $visitor)
+    public function accept(IVisitor $visitor) : float
     {
         return $visitor->visitBread($this);
     }
@@ -25,7 +25,7 @@ class Milk implements IVisitable
         $this->price = $price;
     }
 
-    public function accept(IVisitor $visitor)
+    public function accept(IVisitor $visitor) : float
     {
         return $visitor->visitMilk($this);
     }
@@ -40,7 +40,7 @@ class Eggs implements IVisitable
         $this->price = $price;
     }
 
-    public function accept(IVisitor $visitor)
+    public function accept(IVisitor $visitor) : float
     {
         return $visitor->visitEggs($this);
     }
