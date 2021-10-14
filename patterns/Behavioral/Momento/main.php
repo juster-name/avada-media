@@ -31,6 +31,6 @@ function showAndSave(string $line)
 
     $textEditor->setState($line);
     echo $textEditor->getState();
-    $history->add($textEditor->createMomento());
+    $history->add($textEditor);
 }
 ?>
