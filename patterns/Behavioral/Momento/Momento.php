@@ -13,11 +13,6 @@ class Momento
     {
         return $this->state;
     }
-
-    public function restore(Momento $momento)
-    {
-        $this->state = $momento->getState();
-    }
 }
 
 ?>
