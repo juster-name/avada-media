@@ -7,7 +7,7 @@ class ConcreteClassA extends AbstractClass
     {
         if ($var2 == 0)
         {
-            throw new Exception("Error. Division by zero.");
+            throw new Exception("Error. Division by zero.\n\n");
         }
         return $var1 / $var2;
     }
