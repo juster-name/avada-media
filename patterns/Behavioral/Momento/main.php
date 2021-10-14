@@ -2,7 +2,7 @@
 require_once "Caretaker.php";
 require_once "Originator.php";
 
-$textEditor = new Origitanor("");
+$textEditor = new Origitanor();
 $history = new Caretaker();
 
 showAndSave("This is original line\n");
