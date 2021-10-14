@@ -3,7 +3,7 @@ require_once "AbstractClass.php";
 
 class ConcreteClassA extends AbstractClass
 {
-    public function div($var1, $var2) : float
+    public function div(float $var1, float $var2) : float
     {
         if ($var2 == 0)
         {
@@ -15,7 +15,7 @@ class ConcreteClassA extends AbstractClass
 
 class ConcreteClassB extends AbstractClass
 {
-    public function div($var1, $var2) : float
+    public function div(float $var1, float $var2) : float
     {
         if ($var2 == 0)
         {

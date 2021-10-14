@@ -2,22 +2,22 @@
 
 abstract class AbstractClass
 {
-    public function add($var1, $var2) : float
+    public function add(float $var1, float $var2) : float
     {
         return $var1 + $var2;
     }
 
-    public function sub($var1, $var2) : float
+    public function sub(float $var1, float $var2) : float
     {
         return $var1 - $var2;
     }
 
-    public function mult($var1, $var2) : float
+    public function mult(float $var1, float $var2) : float
     {
         return $var1 * $var2;
     }
-    
-    public abstract function div($var1, $var2) : float;
+
+    public abstract function div(float $var1, float $var2) : float;
 }
 
 ?>
