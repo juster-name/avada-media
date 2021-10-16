@@ -35,7 +35,7 @@ class KeyboardHandler extends Handler
 {
     public function handle(string $type) : string
     {
-        if ($type == "finger")
+        if ($type == "keyboard")
         {
             return "Element was pressed by keyboard";
         }
