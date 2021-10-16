@@ -25,5 +25,4 @@ class Origitanor
         $this->state = $momento->getState();
     }
 }
-
 ?>
