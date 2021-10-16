@@ -7,11 +7,11 @@ class MouseHandler extends Handler
     {
         if ($type == "mouse")
         {
-            return "Element was clicked by mouse\n";
+            return "Element was clicked by mouse";
         }
         else
         {
-            return parent::getNext()->handle($type);
+            return $this->nextHandle($type);
         }
     }
 }
@@ -22,11 +22,11 @@ class SensorHandler extends Handler
     {
         if ($type == "sensor")
         {
-            return "Element was touched by sensor panel\n";
+            return "Element was touched by sensor panel";
         }
         else
         {
-            return parent::getNext()->handle($type);
+            return $this->nextHandle($type);
         }
     }
 }
@@ -37,11 +37,11 @@ class KeyboardHandler extends Handler
     {
         if ($type == "finger")
         {
-            return "Element was pressed by keyboard\n";
+            return "Element was pressed by keyboard";
         }
         else
         {
-            return parent::getNext()->handle($type);
+            return $this->nextHandle($type);
         }
     }
 }

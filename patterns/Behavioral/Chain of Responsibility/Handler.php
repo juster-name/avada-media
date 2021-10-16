@@ -4,14 +4,23 @@ abstract class Handler
 {
     private Handler $next;
 
-    public function setNext(Handler $handler) : void
+    public function __construct(Handler $next)
     {
-        $this->next = $handler;
+        $this->setNext($next);
     }
 
-    public function getNext() : Handler
+    public function setNext(Handler $next) : void
     {
-        return $this->next;
+        $this->next = $next;
+    }
+
+    protected function nextHandle(string $type) : string
+    {
+        if (is_null($this->next))
+        {
+            return "No handlers found";
+        }
+        return $this->next->handle($type);
     }
 
     abstract public function handle(string $type) : string;
