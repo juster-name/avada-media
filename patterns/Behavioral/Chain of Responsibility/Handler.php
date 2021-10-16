@@ -4,7 +4,7 @@ abstract class Handler
 {
     private Handler $next;
 
-    public function __construct(Handler $next)
+    public function __construct(?Handler $next)
     {
         $this->setNext($next);
     }
