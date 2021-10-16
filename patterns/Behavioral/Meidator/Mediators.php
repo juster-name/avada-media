@@ -31,8 +31,8 @@ class TextBasedHandler implements IMediator
                 echo "Triangle was drawn\n";
                 return true;
 
-            case "Circle":
-                echo "Circle was drawn\n";
+            case "Diamond":
+                echo "Diamond was drawn\n";
                 return true;
             
             default:
@@ -53,8 +53,8 @@ class TextBasedHandler implements IMediator
                 echo "Triangle was clicked\n";
                 return true;
 
-            case "Circle":
-                echo "Circle was clicked\n";
+            case "Diamond":
+                echo "Diamond was clicked\n";
                 return true;
             
             default:
