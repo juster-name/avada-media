@@ -14,7 +14,7 @@ class TextBasedHandler implements IMediator
                 return $this->click($component->getName());
 
             default:
-                echo "Can't perform unknown action of '".$actionType."'";
+                echo "Can't perform unknown action of '".$actionType."'\n";
         }
         return false;
     }
@@ -24,19 +24,19 @@ class TextBasedHandler implements IMediator
         switch($componentType)
         {
             case "Box":
-                echo "Box was drawn";
+                echo "Box was drawn\n";
                 return true;
 
             case "Triangle":
-                echo "Triangle was drawn";
+                echo "Triangle was drawn\n";
                 return true;
 
             case "Circle":
-                echo "Circle was drawn";
+                echo "Circle was drawn\n";
                 return true;
             
             default:
-                echo "Can't draw unknown type of '".$componentType."'";
+                echo "Can't draw unknown type of '".$componentType."'\n";
         }
         return false;
     }
@@ -46,19 +46,19 @@ class TextBasedHandler implements IMediator
         switch($componentType)
         {
             case "Box":
-                echo "Box was clicked";
+                echo "Box was clicked\n";
                 return true;
 
             case "Triangle":
-                echo "Triangle was clicked";
+                echo "Triangle was clicked\n";
                 return true;
 
             case "Circle":
-                echo "Circle was clicked";
+                echo "Circle was clicked\n";
                 return true;
             
             default:
-                echo "Can't click unknown type of '".$componentType."'";
+                echo "Can't click unknown type of '".$componentType."'\n";
         }
         return false;
     }
@@ -77,7 +77,7 @@ class ImageBasedHandler implements IMediator
                 return $this->click($component->getName());
 
             default:
-                echo "*⚠️ Action '".$actionType."' E R R O R ⚠️*";     
+                echo "*⚠️ Action '".$actionType."' E R R O R ⚠️*\n";     
         }
         return false;
     }
@@ -91,7 +91,8 @@ class ImageBasedHandler implements IMediator
                 ********
                 *      *
                 *      *
-                ********';
+                ********
+                ';
                 return true;
             
             case "Triangle":
@@ -99,7 +100,8 @@ class ImageBasedHandler implements IMediator
                    *
                   * *
                  *   *
-                * * * *';
+                * * * *
+                ';
                 return true;
             
             case "Diamond":
@@ -108,14 +110,16 @@ class ImageBasedHandler implements IMediator
                   *   *
                 *       *
                   *   *
-                    *';
+                    *
+                    ';
                 return true;
 
             default:
                 echo '
                 *???????*
                 |??⚠️??|
-                *???????*'; 
+                *???????*
+                '; 
             
         }
         return false;
@@ -130,7 +134,8 @@ class ImageBasedHandler implements IMediator
                 *********
                 * click *
                 *       *
-                *********';
+                *********
+                ';
                 return true;
             
             case "Triangle":
@@ -138,7 +143,8 @@ class ImageBasedHandler implements IMediator
                      *
                    *   *
                  * click *
-                *  * * *  *';
+                *  * * *  *
+                ';
                 return true;
             
             case "Diamond":
@@ -147,14 +153,16 @@ class ImageBasedHandler implements IMediator
                   *   *
                 * click *
                   *   *
-                    *';
+                    *
+                    ';
                 return true;
 
             default:
                 echo '
                 *??????????*
                 |⚠️click⚠️|
-                *??????????*'; 
+                *??????????*
+                '; 
             
         }
         return false;

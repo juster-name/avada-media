@@ -10,12 +10,12 @@ abstract class Component
         $this->mediator = $mediator;
     }
 
-    public function draw()
+    public function draw() : bool
     {
         return $this->mediator->action($this, "draw");
     }
 
-    public function click()
+    public function click() : bool
     {
         return $this->mediator->action($this, "click");
     }
