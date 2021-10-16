@@ -1,5 +1,5 @@
 <?php
-require_once "IHandler.php";
+require_once "Handler.php";
 
 class MouseHandler extends Handler
 {
