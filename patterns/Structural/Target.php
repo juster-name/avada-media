@@ -8,9 +8,9 @@ class Target
         '22' => [], 
         'ground' => []];
 
-    public function getContactsKeys() : array
+    public function getContacts() : array
     {
-        return array_keys($this->contacts);
+        return $this->contacts;
     }
 
     public function contact20(string $to) : string
