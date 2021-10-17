@@ -19,7 +19,7 @@ class TextBasedHandler implements IMediator
         return false;
     }
 
-    private function draw($componentType) : bool
+    private function draw(string $componentType) : bool
     {
         switch($componentType)
         {
@@ -41,7 +41,7 @@ class TextBasedHandler implements IMediator
         return false;
     }
 
-    private function click($componentType) : bool
+    private function click(string $componentType) : bool
     {
         switch($componentType)
         {
@@ -82,7 +82,7 @@ class ImageBasedHandler implements IMediator
         return false;
     }
 
-    private function draw($componentType) : bool
+    private function draw(string $componentType) : bool
     {
         switch($componentType)
         {
@@ -125,7 +125,7 @@ class ImageBasedHandler implements IMediator
         return false;
     }
 
-    private function click($componentType) : bool
+    private function click(string $componentType) : bool
     {
         switch($componentType)
         {
