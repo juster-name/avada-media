@@ -4,7 +4,7 @@ require_once "Adaptee.php";
 
 class Adapter
 {
-    private $adaptee;
+    private Adaptee $adaptee;
 
     public function __construct(Adaptee $adaptee)
     {
