@@ -21,7 +21,7 @@ class Adapter
     public function contact21(Target $adapter) : string
     {
         $this->adaptee->connectPin11("21");
-        $adapter->contact20("11");
+        $adapter->contact21("11");
         return "Adapter has connected 'Contact21' to 'Pin11''\n";
     }
 
