@@ -7,9 +7,9 @@ class Adaptee
         '11' => [], 
         'ground' => []];
 
-    public function getPinsKeys() : array
+    public function getPins() : array
     {
-        return array_keys($this->connectedPins);
+        return $this->connectedPins;
     }
 
     public function connectPin10(string $to) : string
