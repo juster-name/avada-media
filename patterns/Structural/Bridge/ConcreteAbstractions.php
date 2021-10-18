@@ -21,6 +21,7 @@ class ConcreteAbstractionB extends Abstraction
     public function newFeatureB() : void
     {
         echo "'newFeatureB' was executed from 'ConcreteAbstractionB'\n";
+        $this->implementation->methodC();
         $this->implementation->methodD();
     }
 }
