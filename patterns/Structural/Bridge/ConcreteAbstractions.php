@@ -1,28 +1,28 @@
 <?php
 require_once "Abstractions.php";
 
-class ConcreteAbstractionA extends RefinedAbstraction
-{
-    public function newFeatureA() : void
-    {
-        echo "'newFeatureA' was executed from 'ConcreteAbstractionA'\n";
-        $this->implementation->methodE();
-    }
-}
-
-class ConcreteAbstractionB extends Abstraction
+class ConcreteAbstractionA extends Abstraction
 {
     public function absFeature() : void
     {
-        echo "'absFeature' was executed from 'ConcreteAbstractionB'\n";
+        echo "'absFeature' was executed from 'ConcreteAbstractionA'\n";
         $this->implementation->methodD();
     }
 
-    public function newFeatureB() : void
+    public function newFeatureA() : void
     {
-        echo "'newFeatureB' was executed from 'ConcreteAbstractionB'\n";
+        echo "'newFeatureB' was executed from 'ConcreteAbstractionA'\n";
         $this->implementation->methodC();
         $this->implementation->methodD();
+    }
+}
+
+class ConcreteAbstractionB extends RefinedAbstraction
+{
+    public function newFeatureB() : void
+    {
+        echo "'newFeatureA' was executed from 'ConcreteAbstractionB'\n";
+        $this->implementation->methodE();
     }
 }
 

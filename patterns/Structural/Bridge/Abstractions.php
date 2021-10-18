@@ -34,6 +34,6 @@ abstract class RefinedAbstraction extends Abstraction
         $this->implementation->methodC();
     }
 
-    abstract public function newFeatureA() : void;
+    abstract public function newFeatureB() : void;
 }
 ?>
