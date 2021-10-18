@@ -3,7 +3,7 @@ require_once "IImplementation.php";
 
 abstract class Abstraction
 {
-    private IImplementation $implementation;
+    protected IImplementation $implementation;
 
     public function __construct(IImplementation $implementation)
     {
@@ -30,7 +30,7 @@ abstract class RefinedAbstraction extends Abstraction
 {
     public function absFeature() : void
     {
-        echo "'absFeatureC' was executed from 'RefinedAbstraction'";
+        echo "'absFeature' was executed from 'RefinedAbstraction'\n";
         $this->implementation->methodC();
     }
 
