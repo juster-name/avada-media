@@ -3,7 +3,7 @@ namespace Decorator;
 require_once "Component.php";
 require_once "Decorators.php";
 
-$string = new Component();
+$string = new Component("This is Component");
 $decoratedString = new TabDecorator(new WaveDecorator(new StarDecorator($string)));
 
 
