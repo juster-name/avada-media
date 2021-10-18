@@ -22,18 +22,18 @@ abstract class Abstraction
         $this->implementation->methodB();
     }
 
-    abstract public function absFeatureC() : void;
+    abstract public function absFeature() : void;
 
 }
 
 abstract class RefinedAbstraction extends Abstraction
 {
-    public function absFeatureC() : void
+    public function absFeature() : void
     {
         echo "'absFeatureC' was executed from 'RefinedAbstraction'";
         $this->implementation->methodC();
     }
 
-    abstract public function newFeature() : void;
+    abstract public function newFeatureA() : void;
 }
 ?>

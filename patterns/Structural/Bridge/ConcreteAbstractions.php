@@ -12,7 +12,7 @@ class ConcreteAbstractionA extends RefinedAbstraction
 
 class ConcreteAbstractionB extends Abstraction
 {
-    public function absFeatureC() : void
+    public function absFeature() : void
     {
         echo "'absFeatureC' was executed from 'ConcreteAbstractionB'";
         $this->implementation->methodD();
