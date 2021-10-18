@@ -1,7 +1,7 @@
 <?php
 require_once "Component.php";
 
-class IntLeaf implements Component
+class IntLeaf implements IComponent
 {
     private int $value;
 
@@ -16,7 +16,7 @@ class IntLeaf implements Component
     }
 }
 
-class MagicLeaf implements Component
+class MagicLeaf implements IComponent
 {
     private int $value;
     private int $magicValue = 42;

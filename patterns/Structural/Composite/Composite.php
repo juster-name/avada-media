@@ -1,7 +1,7 @@
 <?php
 require_once "Component.php";
 
-class Composite implements Component
+class Composite implements IComponent
 {
     private $components = [];
 
@@ -17,7 +17,7 @@ class Composite implements Component
         return $value;
     }
 
-    public function add(Component $component) : void
+    public function add(IComponent $component) : void
     {
         $this->components[] = $component;
     }

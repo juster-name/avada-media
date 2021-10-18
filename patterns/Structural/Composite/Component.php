@@ -1,6 +1,6 @@
 <?php
 
-interface Component
+interface IComponent
 {
     public function getValue() : int;
 }
