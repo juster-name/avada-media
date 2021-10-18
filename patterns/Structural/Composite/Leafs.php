@@ -28,7 +28,7 @@ class MagicLeaf implements Component
 
     public function getValue() : int
     {
-        return intval($this->value - $this->magicValue);
+        return intval(sqrt($this->value) * $this->magicValue);
     }
 }
 
