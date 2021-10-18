@@ -1,7 +1,7 @@
 <?php
 require_once "IImplementation.php";
 
-class ConcreteImplementation
+class ConcreteImplementation implements IImplementation
 {
     public function methodA() : void
     {
@@ -14,6 +14,16 @@ class ConcreteImplementation
     public function methodC() : void
     {
         echo "\t'methodC' was executed from 'ConcreteImplementation'\n";
+    }
+
+    public function methodD() : void
+    {
+        echo "\t'methodD' was executed from 'ConcreteImplementation'\n";
+    }
+
+    public function methodE() : void
+    {
+        echo "\t'methodE' was executed from 'ConcreteImplementation'\n";
     }
 }
 
